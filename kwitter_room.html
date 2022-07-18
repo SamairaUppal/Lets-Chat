@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title> Lets Chat </title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="kwitter_room.css">
+    
+</head>
+
+<body id="bodyBackground">
+    <br>
+    <br>
+    <button id="logout_button" class="btn btn-danger" onclick="logOut()">Logout</button>
+    <center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+        <h1> Lets Chat! </h1>
+        <br>
+        <br>
+        <label id="name"> </label>
+        <br>
+        <br>
+        <input type="text" id="roomInput" class="form-control" placeholder="Enter Room Name">
+        <br>
+        <br>
+        <button id="addRoomButton" class="btn btn-success" onclick="addRoom()"> Add Room </button>
+        <div id="roomName"></div>
+
+    </center>
+    
+
+</body>
+<script src="kwitter_room.js"></script>
+</html>
